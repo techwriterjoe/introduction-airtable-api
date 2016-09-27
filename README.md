@@ -69,7 +69,7 @@ After the table has been located, the URL contains a query string:
 - "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are listed in the Main View. However, the sortField and sortDirection override the default sort.
 
 ###Authentication
-For authentication, Airtable recommends using the API key as a header.
+For authentication, Airtable recommends using the API key as a header. Headers are part of HTTP protocol and a typical HTTP request usually contains several. Headers are not typically displayed with the HTML. As displayed (Fig 4), enter the __"Authorization"__ as the header name and __"Bearer keyV6E7OIK5SJudPy"__ as the header value, replacing with the appropriate text.
 
 
 
