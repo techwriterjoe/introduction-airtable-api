@@ -51,7 +51,7 @@ To find the app ID:
 ###Analyzing the URL and Lauching the Request
 After entering the API key, the app ID, and the remaining field information displayed in Figure 3 above, analyze the below URL.
 
->https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&limit=3&offset=&sortField=Name&sortDirection=asc
+><code>https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&limit=3&offset=&sortField=Name&sortDirection=asc</code>
 
 Initialling the URL locates the Artists table:
 - https://api.airtable.com/v0 points the request to the Airtable API. 
