@@ -15,9 +15,9 @@ Using the API, a simple website pulls the data from the "Artists" table and disp
 The sample site requests data from the database table with every refresh of the browser. If the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed.
 
 ##API Request and Response Examples
-To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool call [Hurl.it](https://www.hurl.it/). [Hurl.it](https://www.hurl.it/) is a web based REST client.
+To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool call [Hurl.it](https://www.hurl.it/). [Hurl.it](https://www.hurl.it/) is a web based REST client. Aftertaking some inputs, it sends the same request to the "Artists" table that the sample website in Figure 2 does. 
 
-Set up the first API request to retrieve the list of Artists' records. Use the image and directions below: 
+To set up the first API request and retrieve the list of artists' records, use the image and directions below: 
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/hurl-it-request-outline.png "Hurl.it request information")
 
@@ -37,7 +37,9 @@ To find the app ID:
    >Note: Airtable's API docs are dynamically generated to use the current accounts information. Meaning, if the account is signed into the web browser, then the API docs display that specific base, table, API key, and other data in the examples. 
 
 3. From the "Airtable API for 'Art Gallery'" page, select the "AUTHENTICATION" option, which is displayed on the left side-bar.
-4. The app ID is listed in the right, blackened window-pane. It is located in the URL between "v0/" and "/Artists". 
+4. The app ID is listed in the right, blackened window-pane. It is located in the URL between "v0/" and "/Artists".
+
+
 
 
 
