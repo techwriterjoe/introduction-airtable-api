@@ -74,6 +74,8 @@ For authentication, Airtable recommends using the API key as a header. Headers a
 Return to Hurl.it and lauch the request.
 
 ##Reading the Response
+
+(5:33)
 ```javascript
 {
    "records": [
