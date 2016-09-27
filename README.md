@@ -17,7 +17,7 @@ Notice different aspects of the example data:
 The table data has the ability to be used or updated with the Airtable API for outside applications.
 
 ##Understanding an API Call 
-For a case study using the API, a simple website pulls the data from the "Artists" table and displays the artists' names as a list. Each list item is linked to information from the other columns of the "Artists", pictured below (Fig  2).
+For a case study using the API, a simple website pulls the "Artists"' data the table and displays the artists' names as a list. Each list item is a link to information from the other columns of the "Artists'" table, pictured below (Fig  2).
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artists-website-homepage-outline.png "Artists homepage")
 
@@ -66,7 +66,11 @@ After the table has been located, the URL contains a query string:
 - "&" is also part of the query string and allows the next URL parameter to be added
 - "limit=3" requests that only 3 records of the original 19 be returned in the response
 - "&offset=" requests how many records are remaining after the 3 that will be returned, no value necessary
-- "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are list in the Main View. However, if the sortField and sortDirection
+- "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are listed in the Main View. However, the sortField and sortDirection override the default sort.
+
+###Authentication
+
+
 
 
 
