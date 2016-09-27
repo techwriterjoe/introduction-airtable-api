@@ -21,6 +21,18 @@ Set up the first API request to retrieve the list of records, which is the data 
 <!--will need info on the dynamic API Docs and where to find Auth Key-->
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/hurl-it-request-outline.png "Hurl.it request information")
 
+To complete the Hurl.it web form, gather the API key and the base or app ID.  
+
+To find the API key:
+1. From the Art Gallery base page at the top right, select the profile image icon, which is displayed as an empty profile image in Figure 1 above.
+2. In the profile drop down menu under the account's email address, select the Account option.
+3. From the "Your Account" page, select "Generate API key"
+
+To find the app ID:
+1. From the Art Gallery base page at the top right, select the "HELP" option.
+2. In the HELP drop-down menu, select the "API docs" option. 
+3. From the "Airtable API for 'Art Gallery'" page, select the "AUTHENTICATION" option, which is displayed on the left side-bar.
+
 
 
 
