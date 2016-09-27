@@ -8,14 +8,17 @@ To proceed, create an [Airtable account](https://airtable.com/) and select the e
 Notice the name of the base app, Art Gallery, is displayed at the top center of the page. This base has two tables Artists and Collections. Artists is currently selected and open. In Artists, there are 19 example records or entries with the first 6 pictured above. There are several columns including Name, Attachments, and Bio. All of the table data has the ability to be updated with the Airtable API for outside applications.
 
 ##Understanding an API Call 
-Using the API a simple web application pulls the data from the "Artists" table and displays the artists' names as a list on a public website, pictured below in figure 2.
+Using the API, a simple website pulls the data from the "Artists" table and displays the artists' names as a list. Each list item is linked to information from the other columns of the "Artists", pictured below in figure 2.
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artists-website-homepage-outline.png "Artists homepage")
 
-The sample web app pulls from the database table with every refresh of the browser. If the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed.
+The sample site requests data from the database table with every refresh of the browser. If the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed.
 
-To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, create the same API calls with a tool call Hurl.
-The API calls that the public webpage uses to retrieve information from the table in figure 1 can be recreated with an API calling tool. Hurl
+##API Request and Response Examples
+To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API calls with a tool call [Hurl.it](https://www.hurl.it/).
+<!--will need info on the dynamic API Docs and where to find Auth Key-->
+![alt text](
+
 
 
 
