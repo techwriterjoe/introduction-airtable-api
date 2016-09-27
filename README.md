@@ -7,6 +7,7 @@ To proceed, create an [Airtable account](https://airtable.com/) and select the e
 Notice the name of the base app, Art Gallery, is displayed at the top center of the page. This base has two tables Artists and Collections. Artists is currently selected and open. In Artists, there are 19 example records or entries with the first 6 pictured above. There are several columns including Name, Attachments, and Bio. All of the table data has the ability to be updated with the Airtable API for outside applications.
 
 For example using the API, a simple web application pulls the data from the Artists table and displays the artists as a list on a public website, pictured below.
+
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artists-website-homepage-outline.png "Artists homepage")
 
 The sample web app pulls from the database table with every refresh of the browser. If the list had been re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed.
