@@ -15,10 +15,10 @@ Using the API, a simple website pulls the data from the "Artists" table and disp
 The sample site requests data from the database table with every refresh of the browser. If the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed.
 
 ##API Request and Response Examples
-To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool call [Hurl.it](https://www.hurl.it/). Hurl.it is a web based REST client.
+To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool call [Hurl.it](https://www.hurl.it/). [Hurl.it](https://www.hurl.it/) is a web based REST client.
 
-Set up the first API request to retrieve the list of records, which is the data listed in the rows of the "Artists" table. Use the image and directions below: 
-<!--will need info on the dynamic API Docs and where to find Auth Key-->
+Set up the first API request to retrieve the list of Artists' records. Use the image and directions below: 
+
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/hurl-it-request-outline.png "Hurl.it request information")
 
 To complete the Hurl.it web form, gather the API key and the base or app ID.  
