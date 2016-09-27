@@ -41,7 +41,7 @@ To find the app ID:
 ###Analyzing the URL and Lauching the Request
 After entering the API key, the app ID, and the remaining field information displayed in Figure 3 above, analyze the below URL.
 
->https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&softField=Name&limit=3&sortDirection=asc
+>https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&limit=3&offset=&sortField=Name&sortDirection=asc
 
 Initialling the URL locates the Artists table:
 - https://api.airtable.com/v0 points the request to the Airtable API. 
@@ -50,12 +50,13 @@ Initialling the URL locates the Artists table:
 
 After the table has been located, the URL contains a query string:
 
-- ?view=Main%20View is the first query field, along with the view value Main View. 
-
-   *"?" represents the start of the query set.
-   *"%20" represents a space in HTTP.
-
-- &limit
+- "?" represents the start of the query set.
+- "view=Main%20View" is the first query field, along with the view value Main View. 
+- "%20" represents a space in HTTP.
+- "&" is also part of the query string and allows the next URL parameter to be added
+- "limit=3" requests that only 3 records of the original 19 be returned in the response
+- "&offset=" requests how many records are remaining after the 3 that will be returned, no value necessary
+- "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are list in the Main View. However, if the sortField and sortDirection
 
 
 
