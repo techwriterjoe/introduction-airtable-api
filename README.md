@@ -68,14 +68,63 @@ After the table has been located, the URL contains a query string:
 - "&offset=" requests how many records are remaining after the 3 that will be returned, no value necessary
 - "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are listed in the Main View. However, the sortField and sortDirection override the default sort.
 
-###Authentication
+###Authentication and Launching the Request
 For authentication, Airtable recommends using the API key as a header. Headers are part of HTTP protocol and a typical HTTP request usually contains several. Headers are not typically displayed with the HTML. As displayed (Fig 4), enter the __"Authorization"__ as the header name and __"Bearer keyV6E7OIK5SJudPy"__ as the header value, replacing with the appropriate text.
 
 Return to Hurl.it and lauch the request.
 
 ##Reading the Response
-
-
+```javascript
+{
+   "records": [
+      {
+         "id": "recwNr9rKGIekjxzk",
+         "fields": {
+            "Name": "Alexander Calder",
+            "Attachments": [
+{
+"id": "attYqPQyYoWue1S1m",
+"url": "https://dl.airtable.com/48PltjWqScqDZEQmLJHl_20120621-114822.jpg",
+"filename": "20120621-114822.jpg",
+"size": 158060,
+"type": "image/jpeg",
+"thumbnails": {
+"small": {
+"url": "https://dl.airtable.com/9PkZEE7PTv6SGIZmFcFr_small_20120621-114822.jpg",
+"width": 40,
+"height": 36
+},
+"large": {
+"url": "https://dl.airtable.com/w92GiIvtROixep7uqfFk_large_20120621-114822.jpg",
+"width": 256,
+"height": 230
+}
+}
+},
+{},
+{}
+],
+"Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
+"Genre": [],
+"Collection": [],
+"On Display?": true
+},
+"createdTime": "2015-02-09T23:04:03.000Z"
+},
+{
+"id": "reciP8kN0EMAfFBhG",
+"fields": {},
+"createdTime": "2015-02-09T23:04:03.000Z"
+},
+{
+"id": "recZDDT0DFw9UzAMT",
+"fields": {},
+"createdTime": "2015-02-10T00:17:52.000Z"
+}
+],
+"offset": "itr2qdUobywUnqoFi/recZDDT0DFw9UzAMT"
+}
+```
 
 
 
