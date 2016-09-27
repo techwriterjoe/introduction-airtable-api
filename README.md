@@ -32,8 +32,10 @@ To find the API key:
 To find the app ID:
 
 1. From the Art Gallery base page at the top right, select the "HELP" option.
-2. In the HELP drop-down menu, select the "API docs" option. 
+2. In the HELP drop-down menu, select the "API docs" option.
+>Note: Airtable's API docs are dynamically generated to use the current accounts information. Meaning, if the account is signed into the web browser, then the API docs display that specific base, table, API key, and other data in the examples. 
 3. From the "Airtable API for 'Art Gallery'" page, select the "AUTHENTICATION" option, which is displayed on the left side-bar.
+4. The app ID is listed in the right, blackened window-pane. It is located in the URL between "v0/" and "/Artists". 
 
 
 
