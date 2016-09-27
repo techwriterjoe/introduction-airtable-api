@@ -49,10 +49,12 @@ Initialling the URL locates the Artists table:
 - /Artists is the specific table within the base "Art Gallery"
 
 After the table has been located, the URL contains a query string:
-The question mark, "?", represents the start of the query set.
+
 - ?view=Main%20View is the first query field, along with the view value Main View. 
+
    *"?" represents the start of the query set.
    *"%20" represents a space in HTTP.
+
 - &limit
 
 
