@@ -23,7 +23,7 @@ For a case study using the API, a simple website pulls the "Artists"' data the t
 
 The sample site requests data from the database table with every refresh of the browser. If the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed. The artists' names are linked to the additional information on the site, which was provided by the through requests or calls to the API.
 
-##API Request and Response Examples
+##API Request Example
 To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool called [Hurl.it](https://www.hurl.it/). [Hurl.it](https://www.hurl.it/) is a web based REST client. Aftertaking some inputs, it sends the same request to the "Artists" table as the sample website. 
 
 To set up the first API request and retrieve the list of artists' records, use the image and directions below: 
@@ -48,7 +48,7 @@ To find the app ID:
 3. From the "Airtable API for 'Art Gallery'" page, select the "AUTHENTICATION" option, which is displayed on the left side-bar.
 4. The app ID is listed in the right, blackened window-pane. It is located in the URL between "v0/" and "/Artists".
 
-###Analyzing the URL and Lauching the Request
+###Reading the URL
 Enter the API key, the app ID, and the remaining field information as displayed above (Fig 3). Before launching the request, analyze the below URL.
 
 >https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&limit=3&offset=&sortField=Name&sortDirection=asc
@@ -71,7 +71,9 @@ After the table has been located, the URL contains a query string:
 ###Authentication
 For authentication, Airtable recommends using the API key as a header. Headers are part of HTTP protocol and a typical HTTP request usually contains several. Headers are not typically displayed with the HTML. As displayed (Fig 4), enter the __"Authorization"__ as the header name and __"Bearer keyV6E7OIK5SJudPy"__ as the header value, replacing with the appropriate text.
 
+Return to Hurl.it and lauch the request.
 
+##Reading the Response
 
 
 
