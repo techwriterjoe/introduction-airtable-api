@@ -17,7 +17,7 @@ The sample site requests data from the database table with every refresh of the 
 ##API Request and Response Examples
 To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API calls with a tool call [Hurl.it](https://www.hurl.it/).
 <!--will need info on the dynamic API Docs and where to find Auth Key-->
-![alt text](
+![alt text](/introduction-airtable-api/artists-website-homepage-outline.png "Hurl.it request information")
 
 
 
