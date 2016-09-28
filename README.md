@@ -74,9 +74,11 @@ For authentication, Airtable recommends using the API key as a header. Headers a
 Return to Hurl.it and lauch the request.
 
 ##Reading the Response
+After the request is launched, Hurl.it displays the response from Airtable. APIs typically communicate in either XML or JSON. Airtable uses JSON, which is a standard within the JavaScript family. 
 
 (5:33)
 ```javascript
+Response Body
 {
    "records": [
       {
@@ -106,7 +108,7 @@ Return to Hurl.it and lauch the request.
                {},
                {}
             ],
-            "Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made               with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary             sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
+            "Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
             "Genre": [
                "Surrealism",
                "Modern art",
