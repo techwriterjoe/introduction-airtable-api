@@ -139,7 +139,7 @@ The above request and response retrieve a list of records. Part of that JSON rep
 ##Creating the Artists' Details Pages with a New Request
 
 
-
+![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artist-link-outline.png "Example website bio page")
 
 
 
