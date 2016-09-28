@@ -130,6 +130,13 @@ Response Body
 }
 ```
 
+As shown above, a record contains an ID value, fields object, and a createdTime value. The fields object has 6 child objects or child arrays, including the large attachment array, which contains child objects of its own and so on. A JSON record contains all of the information displayed in the original "Artists" Airtable; for example the links for the attachment thumbnails, the "Genre" tags, and the "On Display?" boolean.
+
+Notice the last value listed on the same level as the records array, the "offset" value. This information allows the next response to call the remaindor of the records. If there are 19, and 3 were already requested, then the offset value tracks the 16 left.
+
+
+
+
 
 
 
