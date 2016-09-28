@@ -131,14 +131,16 @@ Response Body
 
 As shown above, a record contains an "id" value, "fields" object, and a "createdTime" value. The fields object has 6 child objects or child arrays, including the large attachment array, which contains child-objects of its own and so on. A JSON record contains all of the information displayed in the original "Artists" Airtable; for example the links of the attachment thumbnails, the "Genre" tags, and the "On Display?" boolean.
 
-Notice the last value listed on the same level as the records array, the "offset" value. This information allows the next response to call the remaindor of the records. If there are 19, and 3 were already requested, then the offset value tracks the 16 left.
+Notice the last value listed on the same level as the records array, the "offset" value. This information allows the next request to call the remaindor of the records. If there are 19 total records, and 3 were already requested, then the offset value tracks the 16 left.
  
 ##Creating an Artists' Details Page: Retrieve a Single Record
-The example website's homepage uses a request designed to respond with a list of multiple records. However, for an individual artist's detail page, a request only needs a single record from the Airtable database. Each artist's name listed on the homepage links to a detail similar to the one pictured below (Fig ).    
+The example website's homepage uses a request designed to respond with a list of multiple records. However, for an individual artist's detail page, a request only needs a single record from the Airtable database.
+
+Each artist's name listed on the homepage links to a detail similar to the one pictured below (Fig 5). To create this page, the website enters a different single record request to the API.    
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artist-link-outline.png "Example website bio page")
 
-The artist's detail page request is smaller and easier than the list example. Return to [Hurl.it](https://www.hurl.it/) and fill in the web form with the following URL and the previous header information, pictured below (Fig ).
+The artist's detail page request is smaller and easier than the list example. Return to [Hurl.it](https://www.hurl.it/) and fill in the web form with the following URL and the previous header information, pictured below (Fig 6).
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/hurl-it-single-record-outline.png "Single record API request")
 
@@ -156,10 +158,10 @@ To locate the record id:
 2. From the "Airtable API for 'Art Gallery'" page, select the "Retrieve a Record" link, which is displayed on the left side-bar.
 3. The rec ID for the signed in account is listed on the right, blackened window-pane. It is located in the URL after "/Artists".
 
-Authentication for the single record request is handle the same as the list of records request. 
+Authentication for the single record request is handled the same as the list of records' request. 
 
 ##What to do Next?
 
-This overview demonstrated how to send two different request to the Airtable API. Also, a sample website was pictured for a pratical use case. However, the Airtable API is capable of setting, deleting, and changing records as well. The external use of the API is near endless. Continue to read the Airtable API docs and additional Airtable videos. 
+This overview demonstrated how to send two different requests to the Airtable API. Also, a sample website was pictured for a pratical use case. However, the Airtable API is capable of setting, deleting, and changing records as well. The external use of the API is near endless. Continue to read the Airtable API docs and additional Airtable videos. 
 
 
