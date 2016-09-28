@@ -64,7 +64,7 @@ After the table has been located, the URL contains a query string:
 - "view=Main%20View" is the first query field, along with the view value Main View. 
 - "%20" represents a space in HTTP.
 - "&" is also part of the query string and allows the next URL parameter to be added
-- "limit=3" requests that only 3 records of the original 19 be returned in the response
+- "limit=3" requests that only 3 records of the original 19 be returned in the response; Airtable handles a limit up to 100
 - "&offset=" requests how many records are remaining after the 3 that will be returned, no value necessary
 - "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are listed in the Main View. However, the sortField and sortDirection override the default sort.
 
@@ -75,6 +75,8 @@ Return to Hurl.it and lauch the request.
 
 ##Reading the Response
 After the request is launched, Hurl.it displays the response from Airtable. APIs typically communicate in either XML or JSON. Airtable uses JSON, which is a standard within the JavaScript family. 
+
+>Below is a small sample of only one record, within that record only one attachment is displayed. The "{...}" symbols are used to represent the collapsed or code folded, hidden records and attachments. To view the entire object with all the child-objects and child-arrays explore response on Hurl.it with various limit values within the request.
 
 (5:33)
 ```javascript
@@ -105,8 +107,8 @@ Response Body
                      }
                   }
                },
-               {},
-               {}
+               {...},
+               {...}
             ],
             "Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
             "Genre": [
@@ -121,6 +123,8 @@ Response Body
          },
          "createdTime": "2015-02-09T23:04:03.000Z"
       }
+      {...}
+      {...}
    ],
    "offset": "itrJHzurZ3IkRqnaY/recwNr9rKGIekjxzk"
 }
