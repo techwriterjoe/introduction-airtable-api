@@ -2,8 +2,8 @@
 
 This overiew describes the use of the Airtable API to communicate between an Airtable base and a custom built website. Airtable is a web application that creates base apps, which are colorful, intuitive, easy-to-use spreadsheet sets. The base tables organize images, tags, descriptions, and much more. With the Airtable API, the user-freindly base apps provide databases that are interacted with from anywhere across the web.
 
-##Get Started with Airtable
-To proceed, create an [Airtable account](https://airtable.com/) and select the example base named "Art Gallery". When finished, the browser displays a prefilled example table, pictured below (Fig 1).
+##Getting Started with Airtable
+Create an [Airtable account](https://airtable.com/) and select the example base named "Art Gallery". When finished, the browser displays a prefilled example table, pictured below (Fig 1).
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/art-gallery-base-outline.png "Art Gallery base and Artists table")
 
@@ -130,9 +130,13 @@ Response Body
 }
 ```
 
-As shown above, a record contains an ID value, fields object, and a createdTime value. The fields object has 6 child objects or child arrays, including the large attachment array, which contains child objects of its own and so on. A JSON record contains all of the information displayed in the original "Artists" Airtable; for example the links for the attachment thumbnails, the "Genre" tags, and the "On Display?" boolean.
+As shown above, a record contains an "id" value, "fields" object, and a "createdTime" value. The fields object has 6 child objects or child arrays, including the large attachment array, which contains child objects of its own and so on. A JSON record contains all of the information displayed in the original "Artists" Airtable; for example the links for the attachment thumbnails, the "Genre" tags, and the "On Display?" boolean.
 
 Notice the last value listed on the same level as the records array, the "offset" value. This information allows the next response to call the remaindor of the records. If there are 19, and 3 were already requested, then the offset value tracks the 16 left.
+
+The above request and response retrieve a list of records. Part of that JSON reponse updates the homepage of the sample website. The website also needs each list entry on the homepage to link to additional information about the artist. A different request supplies individual record information without the larger list. 
+
+##Creating the Artists' Details Pages with a New Request
 
 
 
