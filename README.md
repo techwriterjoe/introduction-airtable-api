@@ -151,10 +151,15 @@ The URL locates the individual record:
 - The new item is the record id at the end of the URL, listed above as: "recOHPNmxtTbEstyu"
 
 To locate the record id:
+
 1. Return to the API docs, specifically the "Airtable API for 'Art Gallery'" page.
 2. From the "Airtable API for 'Art Gallery'" page, select the "Retrieve a Record" link, which is displayed on the left side-bar.
 3. The rec ID for the signed in account is listed on the right, blackened window-pane. It is located in the URL after "/Artists".
 
-Again, 
+Authentication for the single record request is handle the same as the list of records request. 
+
+##What to do Next?
+
+This overview demonstrated how to send two different request to the Airtable API. Also, a sample website was pictured for a pratical use case. However, the Airtable API is capable of setting, deleting, and changing records as well. The external use of the API is near endless. Continue to read the Airtable API docs and additional Airtable videos. 
 
 
