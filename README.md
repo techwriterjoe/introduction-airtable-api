@@ -30,7 +30,7 @@ To set up the first API request and retrieve the list of artists' records, use t
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/hurl-it-request-outline.png "Hurl.it request information")
 
-To complete the Hurl.it web form, gather the API key and the base or app ID.  
+To complete the [Hurl.it](https://www.hurl.it/) web form, gather the API key and the base or app ID.  
 
 To find the API key:
 
@@ -76,7 +76,7 @@ Return to Hurl.it and lauch the request.
 ##Reading the Response
 After the request is launched, Hurl.it displays the response from Airtable. APIs typically communicate in either XML or JSON. Airtable uses JSON, which is a standard within the JavaScript family. 
 
->Below is a small sample of only one record, within that record only one attachment is displayed. The "{...}" symbols are used to represent the collapsed or code folded, hidden records and attachments. To view the entire object with all the child-objects and child-arrays explore response on Hurl.it with various limit values within the request.
+>Below is a small sample of only one record of the three requested, within that record only one attachment is displayed in JSON. The "{...}" symbols are used to represent the collapsed or code folded, hidden records and attachments. To view the entire records array with all the child-objects and child-arrays, explore the response on Hurl.it with various limit values within the request. Thsi request is designed for the list of many records.
 
 (5:33)
 ```javascript
@@ -136,7 +136,8 @@ Notice the last value listed on the same level as the records array, the "offset
 
 The above request and response retrieve a list of records. Part of that JSON reponse updates the homepage of the sample website. The website also needs each list entry on the homepage to link to additional information about the artist. A different request supplies individual record information without the larger list. 
 
-##Creating the Artists' Details Pages with a New Request
+##Creating an Artists' Details Page with a New Example Request
+The example website's homepage used a request designed to respond with a list of multiple records. However, for an individual artist's detail page, a request only needs a single record from the Airtable database. The artist's detail page request is smaller and easier than the previous example. Return to [Hurl.it](https://www.hurl.it/) and fill in the web form with the    
 
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artist-link-outline.png "Example website bio page")
