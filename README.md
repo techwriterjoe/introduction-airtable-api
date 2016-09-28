@@ -1,6 +1,6 @@
 # Introduction to Airtable API
 
-This overiew describes the use of the Airtable API to communicate between an Airtable base and a custom built website. Airtable is a web application that creates base apps, which are colorful, intuitive, easy-to-use spreadsheet sets. The base tables organize images, tags, descriptions, and much more. With the Airtable API, the user-freindly base apps provide a database admin that can be interacted with from anywhere across the web.
+This overiew describes the use of the Airtable API to communicate between an Airtable base and a custom built website. Airtable is a web application that creates base apps, which are colorful, intuitive, easy-to-use spreadsheet sets. The base tables organize images, tags, descriptions, and much more. With the Airtable API, the user-freindly base apps provide databases that are interacted with from anywhere across the web.
 
 ##Get Started with Airtable
 To proceed, create an [Airtable account](https://airtable.com/) and select the example base named "Art Gallery". When finished, the browser displays a prefilled example table, pictured below (Fig 1).
@@ -84,47 +84,43 @@ Return to Hurl.it and lauch the request.
          "fields": {
             "Name": "Alexander Calder",
             "Attachments": [
-{
-"id": "attYqPQyYoWue1S1m",
-"url": "https://dl.airtable.com/48PltjWqScqDZEQmLJHl_20120621-114822.jpg",
-"filename": "20120621-114822.jpg",
-"size": 158060,
-"type": "image/jpeg",
-"thumbnails": {
-"small": {
-"url": "https://dl.airtable.com/9PkZEE7PTv6SGIZmFcFr_small_20120621-114822.jpg",
-"width": 40,
-"height": 36
-},
-"large": {
-"url": "https://dl.airtable.com/w92GiIvtROixep7uqfFk_large_20120621-114822.jpg",
-"width": 256,
-"height": 230
-}
-}
-},
-{},
-{}
-],
-"Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
-"Genre": [],
-"Collection": [],
-"On Display?": true
-},
-"createdTime": "2015-02-09T23:04:03.000Z"
-},
-{
-"id": "reciP8kN0EMAfFBhG",
-"fields": {},
-"createdTime": "2015-02-09T23:04:03.000Z"
-},
-{
-"id": "recZDDT0DFw9UzAMT",
-"fields": {},
-"createdTime": "2015-02-10T00:17:52.000Z"
-}
-],
-"offset": "itr2qdUobywUnqoFi/recZDDT0DFw9UzAMT"
+               {
+                  "id": "attYqPQyYoWue1S1m",
+                  "url": "https://dl.airtable.com/48PltjWqScqDZEQmLJHl_20120621-114822.jpg",
+                  "filename": "20120621-114822.jpg",
+                  "size": 158060,
+                  "type": "image/jpeg",
+                  "thumbnails": {
+                     "small": {
+                        "url": "https://dl.airtable.com/9PkZEE7PTv6SGIZmFcFr_small_20120621-114822.jpg",
+                        "width": 40,
+                        "height": 36
+                     },
+                     "large": {
+                        "url": "https://dl.airtable.com/w92GiIvtROixep7uqfFk_large_20120621-114822.jpg",
+                        "width": 256,
+                        "height": 230
+                     }
+                  }
+               },
+               {},
+               {}
+            ],
+            "Bio": "Alexander Calder was an American sculptor known as the originator of the mobile, a type of kinetic sculpture made               with delicately balanced or suspended components which move in response to motor power or air currents. Calder’s stationary             sculptures are called stabiles. He also produced numerous wire figures, notably for a miniature circus.\n",
+            "Genre": [
+               "Surrealism",
+               "Modern art",
+               "Kinetic Art"
+            ],
+            "Collection": [
+               "recmuGWV1K17eIWCa"
+            ],
+            "On Display?": true
+         },
+         "createdTime": "2015-02-09T23:04:03.000Z"
+      }
+   ],
+   "offset": "itrJHzurZ3IkRqnaY/recwNr9rKGIekjxzk"
 }
 ```
 
