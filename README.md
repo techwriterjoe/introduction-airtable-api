@@ -147,5 +147,14 @@ Prior to launching the request, examine the URL.
 > https://api.airtable.com/v0/appdAud8ZSY3JcFYT/Artists/recOHPNmxtTbEstyu
 
 The URL locates the individual record:
+- The API link, app id, and table name are similar to the previous request URL
+- The new item is the record id at the end of the URL, listed above as: "recOHPNmxtTbEstyu"
+
+To locate the record id:
+1. Return to the API docs, specifically the "Airtable API for 'Art Gallery'" page.
+2. From the "Airtable API for 'Art Gallery'" page, select the "Retrieve a Record" link, which is displayed on the left side-bar.
+3. The rec ID for the signed in account is listed on the right, blackened window-pane. It is located in the URL after "/Artists".
+
+Again, 
 
 
