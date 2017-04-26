@@ -16,14 +16,14 @@ Notice different aspects of the example data:
 
 The table data has the ability to be used or updated with the Airtable API for outside applications.
 
-##Understanding an API Call 
+## Understanding an API Call 
 For a case study using the API, imagine a simple website that pulls the "Artists"' data from the table and displays the artists' names as a list on it's homepage. Each list item is also a link to information from the other columns of the "Artists" table. The hompegae for the example website is pictured below (Fig  2).
 
 ![alt text](https://github.com/techwriterjoe/introduction-airtable-api/blob/master/artists-website-homepage-outline.png "Artists homepage")
 
 The example site requests data from the "Artists" database table with every refresh of the browser. The Airtable API and Airtable base apps update in real time. For instance, if the "Name" column is re-ordered in the Airtable web interface, for example by an added table filter, then the list displaying on the homepage is also reordered after the browser is refreshed. Every request to the Airtable API handles up-to-date information from the spreadsheets.  
 
-##API Request Example for a List of Records
+## API Request Example for a List of Records
 To learn how the Airtable API provides the public website with the "Name" data from the "Artists" table, recreate the same API request with a tool called [Hurl.it](https://www.hurl.it/). [Hurl.it](https://www.hurl.it/) is a web based REST client. Aftertaking some inputs, it sends the same request to the "Artists" table as the example website. 
 
 To set up the first API request and retrieve the list of artists' records, use the image and directions below: 
@@ -48,7 +48,7 @@ To locate the app ID:
 3. From the "Airtable API for 'Art Gallery'" page, select the "AUTHENTICATION" link, which is displayed on the left side-bar.
 4. The app ID is listed on the right, blackened window-pane. It is located in the URL between "v0/" and "/Artists".
 
-###Reading the URL
+### Reading the URL
 Enter the API key, the app ID, and the remaining field information as displayed above (Fig 3). Before launching the request, analyze the below URL.
 
 >https://api.airtable.com/v0/appFMngUhBgzpTEsk/Artists/?view=Main%20View&limit=3&offset=&sortField=Name&sortDirection=asc Note: if this link is selected, then a browser with an Authication error should appear.
@@ -68,12 +68,12 @@ After the table has been located, the URL contains a query string in order to se
 - "&offset=" requests how many records are remaining after the initial 3 that will be returned, no value necessary
 - "&sortField=Name&sortDirection=asc" by default, the reponse returns the list of records in the same order as they are listed in the Main View. However, the sortField and sortDirection override the default sort order.
 
-###Authentication and Launching the Request
+### Authentication and Launching the Request
 For authentication, Airtable recommends using the API key as a header. Headers are part of HTTP protocol and a typical HTTP request usually contains several. Headers are not typically displayed with the HTML. As demonstrated (Fig 4), enter the __"Authorization"__ as the header name and __"Bearer keyV6E7OIK5SJudPy"__ as the header value, but replace with the appropriate text according to the account.
 
 Return to [Hurl.it](https://www.hurl.it/) and lauch the request.
 
-##Reading the Response
+## Reading the Response
 After the request is launched, [Hurl.it](https://www.hurl.it/) displays the JSON response from Airtable. APIs typically communicate in either XML or JSON. Airtable uses JSON, which is a standard within the JavaScript language. 
 
 >Below is a small sample of only one JSON record of the three requested, within that record only one JSON attachment is displayed. The "{...}" symbols are used to represent the collapsed or code folded, hidden records and attachments. To view the entire JSON records list with all the child-objects and child-arrays, explore the response on [Hurl.it](https://www.hurl.it/) with various limit values within the request. This request is designed for the list of many records. Requesting a single record is covered later on in this document.
@@ -133,7 +133,7 @@ As shown above, a record contains an "id" value, "fields" object, and a "created
 
 Notice the last value listed on the same level as the records array, the "offset" value. This information allows the next request to call the remaindor of the records. If there are 19 total records, and 3 were already requested, then the offset value tracks the 16 left.
  
-##Creating an Artists' Details Page: Retrieve a Single Record
+## Creating an Artists' Details Page: Retrieve a Single Record
 The example website's homepage uses a request designed to respond with a list of multiple records. However, for an individual artist's detail page, a request only needs a single record from the Airtable database.
 
 Each artist's name listed on the homepage links to a detail similar to the one pictured below (Fig 5). To create this page, the website enters a different single record request to the API.    
@@ -160,7 +160,7 @@ To locate the record id:
 
 Authentication for the single record request is handled the same as the list of records' request. 
 
-##What to do Next?
+## What to do Next?
 
 This overview demonstrated how to send two different requests to the Airtable API. Also, a sample website was pictured for a pratical use case. However, the Airtable API is capable of setting, deleting, and changing records as well. The external use of the API is near endless. Continue to read the Airtable API docs and additional Airtable videos. 
 
